@@ -1,0 +1,28 @@
+**C program starts with header file.
+
+** #include <stdio.h>
+#include <stdio.h>: This line is a preprocessor directive. It tells the compiler to include the contents of the stdio.h header file in the program. The stdio.h header file contains declarations for input and output functions like printf() and scanf().
+
+** int main()
+int main(): This is the main function of the C program. Every C program must have a main() function, and the program starts executing from this function. The int before main() indicates that the function returns an integer value. Typically, main() returns an integer status code to the operating system to indicate whether the program executed successfully (0) or encountered an error (non-zero).
+
+** {
+{: This curly brace marks the beginning of the main function's body. In C, curly braces {} are used to define blocks of code, such as function bodies, loops, and conditional statements.
+
+** printf("Allah Akbar");
+printf("Allah Akbar");: This line is a printf() statement, which is used to print formatted output to the console. In this case, it prints the string "Allah Akbar". The printf() function formats and prints data according to the format specifier provided. In this example, there's no format specifier, so the string "Allah Akbar" will be printed as is.
+
+** return 0;
+return: The return statement is used to terminate the execution of a function and return a value to the caller. In this case, main() is a function of type int, which means it should return an integer value.
+
+0: The integer value 0 here indicates the successful termination of the program. In C programming convention, returning 0 from the main() function indicates that the program executed successfully without any errors. This convention is recognized by the operating system as a signal that the program completed its execution successfully.
+
+Therefore, return 0; in the main() function indicates that the program has executed successfully and is returning a status code of 0 to the operating system. This status code is typically used to indicate the successful completion of the program when it is executed from a command line or 
+
+** }
+}: This curly brace marks the end of the main function's body. It closes the block of code that started with the opening curly brace {.
+Overall, the code includes a header file, defines the main function, prints a message to the console using printf(), and ends the main function.
+
+**in the {}, all instructions are given for computer works. 
+
+** when we see semicolon(;) at the end of a line, it means, this line is given command computer for doing works.

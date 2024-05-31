@@ -1,0 +1,154 @@
+Here,
+#include <stdio.h> is called header file.
+
+** the extension of header file is .h
+** stdio means standard input output.
+
+**Overview
+The keyword stdio.h in C is a header file. The reason why we use stdio.h in C is that this header file imports different variables, macros, and functions to perform input and output operations. To perform input and output operations in our C program, we need to import the stdio.h header file into our program.
+
+**Introduction
+The stdio.h is one of the most commonly used header file in C. This file enables us to use the input and output functionality in C. As stdio.h contains more than 40 functions that are used to perform input and output operations, we get a lot of different ways to get and display data in C.
+
+**What is stdio.h in C?
+The file stdio.h is a built-in header file in C. The acronym stdio stands for Standard Input and Output. This header file contains 3 variables, multiple function definitions, and multiple macro definitions. These variables, functions, and macros are related to the input and output operations in C.
+
+**Syntax to Include stdio.h in C
+#include <stdio.h>
+
+#include is a preprocessor directory in C. This keyword is used to include (or import) a header file into our program.
+
+**Use of stdio.h
+The stdio.h header file allows us to perform input and output operations in C. The functions like printf() and scanf() are used to display output and take input from a user, respectively. This library allows us to communicate with users easily.
+
+The stdio.h library uses streams to communicate with physical devices. A stream is a communication channel between a program and the physical input and output devices. For example, a standard input (stdin) is a stream used to read input data from a keyboard.
+
+** Stdio.h Library Variables
+There are 3 variables (or types) in the stdio.h library. These are:
+
+S. No.	              Variable Name	                             Variable Description
+  1	                      FILE         	It is a data object that stores the information about controlling streams.
+  2	                     size_t	     It is an unsigned integral data type. It is the return type of the sizeof operator.
+  3	                      fpos_t	      It is a data object that is used to represent any position in a file.
+
+** Stdio.h Library Macros
+The name given to a small piece of code is called a macro. Following are some of the commonly used stdio.h library's macros:
+
+S. No.                  	Macro Name                  	               Macro Description
+  1	                           EOF	                 It stands for End Of File. It contains a negative integer that indicates the end of a file
+  2	                           NULL	                 It represents a Null Pointer (a pointer that does not point to anything)
+  3	                         FOPEN_MAX	             It contains an integer that represents the number of files that can be opened simultaneously
+  4	                       FILENAME_MAX	             It contains an integer that represents the maximum size (in bytes) of a filename string
+  5	                         L_tmpnam	             It contains an integer that represents the maximum size of a temporary filename string
+  6	                          BUFSIZ	             It contains an integer that represents the buffer size used by setbuf function
+  7	                          TMP_MAX	             It contains an integer that represents the maximum unique filenames the tmpnam function can generate
+  8	                    stdin, stdout, stderr	     These macros stand for standard input, standard output, and standard error, respectively. They are pointers to the FILE object
+  9	                  _IOFBF, _IOLBF, _IONBF	     These macros stand for Input Output Fully Buffered, Line Buffered, and Unbuffered, respectively. They specify the mode for file buffering
+ 10	                 SEEK_END, SEEK_SET, SEEK_CUR	 These macros are used to locate different file positions
+
+**Stdio.h Library Functions
+There are several stdio.h library functions in C. These functions are used to perform different input and output functions.
+
+Following are the stdio.h functions:
+
+S. No.	                    Function Name	                 Function Description
+  1	                           printf                   	Displays data to stdout
+  2	                           scanf	                  Reads input data from stdin
+  3	                          fprintf	                  Displays data to the stream
+  4	                          fscanf	                 Reads input data from the stream
+  5	                          vprintf	            Displays data from an argument list to stdout
+  6	                          vscanf	               Reads input data into an argument list
+  7	                          sprintf	                    Writes output to a string
+  8	                          sscanf	                  Reads data from a string input
+  9	                         snprintf	             Writes output to a buffer of given size
+ 10	                         vsnprintf	    Displays data from an argument list to a buffer of given size
+ 11	                          vsprintf	          Displays data from an argument list to a string
+ 12	                          vsscanf	          Reads data from a string into an argument list
+ 13	                          vfprintf	          Displays data from an argument list to the stream
+ 14	                           vfscanf	        Reads input data from the stream to an argument list
+ 15	                           tmpnam	                   Creates a new temporary file
+ 16	                           tmpfile             	Opens a temporary file in binary update mode
+ 17	                           rename	                      Renames the given file
+ 18	                           remove	                      Deletes the given file
+ 19	                           fopen	                       Opens the given file
+ 20	                           fclose	                       Closes an open file
+ 21                           fflush	             Flushes the output of the given stream
+ 22	                          setbuf	                  Specifies the buffer of a stream
+ 23	                          setvbuf	                    Update the buffer of a stream
+ 24	                          freopen	        Restarts the stream to open a new file or open the existing file with a different access mode
+ 25	                           fgetc	                    Fetches the next character from the given stream
+ 26	                           fputc	                     Writes a new character to the given stream
+ 27	                           fgets	                   Fetches a line (string) from the given stream
+ 28	                           fputs	                   Writes a new string to the given stream
+ 29	                            getc	                Fetches the next character from the given stream
+ 30	                            gets	                     Fetches a string from stdin
+ 31	                           getchar	                 Fetches the next character from stdin
+ 32	                           putchar	                    Writes a new character to stdout
+ 33	                            putc	               Writes a new character to the given stream
+ 34	                            puts	                      Writes a new string to stdout
+ 35	                           ungetc	         Pushes a character in the given stream in order to read the next character
+ 36	                           fread	                          Reads data from a stream
+ 37	                           fwrite	                          Writes data to a stream
+ 38	                           rewind	                  Sets the file position of a given stream to the beginning
+ 39	                           fgetpos	                   Fetches the current file position in a given stream
+ 40	                            fseek	              Advances the position of a given stream to the specified number of bytes
+ 41                        	   fsetpos	              Sets the position of a given stream to the position given by fgetpos function
+ 42	                            ftell	                    Fetches the current file position in a given stream
+ 43	                            ferror	                          Checks error indicators for a given stream
+ 44	                             feof	                          Checks the EOF indicator for a given stream
+ 45	                            perror	                                  Displays the error message
+ 46	                            clearerr	                   Deletes the error indicators for a given stream
+
+
+**Let us look at a simple example to understand a couple of commonly used stdio.h functions.
+
+#include<stdio.h>
+
+int main() 
+{
+    // creating a string variable
+    char* str = "Coding";
+    
+    // creating a variable to store the extracted value
+    char extracted_value[20];
+    
+    // using sscanf() from stdio.h library
+    sscanf(str, "%s" , extracted_value);
+
+    // using printf() from stdio.h library
+    printf("The text extracted from string str is: %s", extracted_value);
+
+    return 0;
+}
+
+Output:
+
+The text extracted from string str is: Coding 
+
+In the above example, we defined a string str and declared a variable extracted_value. Then, we used the sscanf() function (it comes from the stdio.h header file) to extract (or read) all the characters from the string str and store them in the variable extracted_value. Finally, we used another stdio.h function, i.e. printf(), to print the value stored in extracted_value.
+
+Quiz Pop
+new tag
+Quiz Type
+SCQ
+100
+Success Rate:
+35%
+
+** How can you open a file for reading using stdio.h functions?
+
+fopen("file.txt", "r")
+fopen("file.txt", "w")
+fopen("file.txt", "a")
+fopen("file.txt", "rw")
+
+Answer : fopen("file.txt", "r")
+
+**Conclusion
+
+The keyword stdio.h is a header file in C.
+The stdio.h library imports variables, functions, and macros into our program.
+The variables, functions, and macros imported by stdio.h are used to perform input and output operations.
+printf() and scanf() are two of the most commonly used stdio.h functions.
+
+link : https://www.scaler.com/topics/stdio-h-in-c/
