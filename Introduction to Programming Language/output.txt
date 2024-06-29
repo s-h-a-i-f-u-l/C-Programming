@@ -1,1 +1,1 @@
-This is written to a file using fprintf.
+This is written to a file using printf.
