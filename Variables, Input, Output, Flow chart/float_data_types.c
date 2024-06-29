@@ -1,20 +1,30 @@
-//float means fraction value.
 #include <stdio.h>
 
-int main()
-{
-    float a = 1.334;
+int main() {
+    float b;
     
-    //printing the variables defined above along with their sizes
-    printf("Hello! I am a float. My value is %f and "
-           "my size is %d byte.\n", a,sizeof(char));
+    // Format specifiers of float
+    printf("The format specifiers of float is : ( %%f )\n");
 
-    //printing two digit after point
-    printf("The two digit after point %0.2f \n",a);
+    // Direct float input
+    b = 3.1416;
+    printf("\nThe float value is = %f \n", b);
+    
+    // Using scanf
+    printf("Enter a float value = ");
+    scanf("%f", &b);
 
+    printf("The float value is = %f \n", b);
 
-    //printing using %lu format specifier
-    printf("The two digit after point %lu",a);
+    // Size of float
+    int x = sizeof(float);
+    printf("The size of float is = %d \n", x);
+
+    // Integer value of a float
+    printf("The integer value of a float is = %d \n", (int)b);
+
+    // Printing two digits after the point
+    printf("The two digits after the point are: %.2f \n", b);
 
     return 0;
     // return 0 indicates that the program ended successfully
